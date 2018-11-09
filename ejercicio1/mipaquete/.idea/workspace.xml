@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32d290cf-2c96-4734-80de-35d64b8b3217" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/modelo.py" beforeDir="false" afterPath="$PROJECT_DIR$/modelo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +14,7 @@
     <session id="-1067608212">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -192,7 +192,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06807667" />
