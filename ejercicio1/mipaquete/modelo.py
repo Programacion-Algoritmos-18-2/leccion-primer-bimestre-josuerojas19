@@ -58,3 +58,55 @@ class EmpleadoPorHoras(Empleado):
             cadena = "%s \n Numero horas: %s \n Valor Hora: %s \n Sueldo Final: %s" % (super(EmpleadoPorHoras, self).presentarDatos(), self.obtenerNumeroDeH(), self.obtenerValorPorH(), self.calcular_Sueldo_Final())
             return cadena
 
+
+class EmpleadoFijo(Empleado):
+        def __init__(self):
+            super(EmpleadoFijo, self).__init__()
+            self.sueldf = 0
+            self.desS = 0
+
+        def agregarSueldoFijo(self, sf):
+            self.sueldf = sf
+
+        def obtenerSueldoFijo(self):
+            return self.sueldf
+
+        def agregarDescuentoSeguro(self, ds):
+            self.desS = ds
+
+        def obtenerDescuentoSeguro(self):
+            return self.desS
+
+        def calcular_Sueldo_Final(self):
+            sueldo = (self.sueldf + self.comision_fija) - self.desS
+            return sueldo
+
+        def presentarDatos3(self):
+            cadena = "%s \n Sueldo fijo: %s \n Descuento Seguro: %s \n Sueldo Final: %s" % (super(EmpleadoFijo, self).presentarDatos(), self.obtenerSueldoFijo(), self.obtenerSueldoFijo(), self.calcular_Sueldo_Final())
+            return cadena
+
+class EmpleadoSemanal(Empleado):
+        def __init__(self):
+            super(EmpleadoSemanal,self). __init__()
+            self.numSma = 0
+            self.vpSma = 0
+
+        def agegarNumeroDeSemana(self, nsm):
+            self.numSema = nsm
+
+        def obtenerNumeroDeSemana(self):
+            return self.numSma
+
+        def agregarValorPorSemana(self, vps):
+            self.vpSma = vps
+
+        def obtenerValorPorSemana(self):
+            return self.vpSma
+
+        def calcular_Sueldo_Final(self):
+            sueldo = self.vpSma * self.numSema +self.comision_fija
+            return sueldo
+
+        def presentarDatos4(self):
+            cadena = "%s \n Numero de Semana: %s \n Valor Por Semana: %S \n Sueldo Final: %s" % (super(EmpleadoSemanal, self).presentarDatos(), self.obtenerNumeroDeSemana(), self.obtenerValorPorSemana(), self.calcular_Sueldo_Final())
+            return cadena
